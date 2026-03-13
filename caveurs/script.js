@@ -2,7 +2,7 @@ document.getElementById("conx").addEventListener('submit' , accesPages)
 
 
 function accesPages(){
-    if (document.getElementById("idn").value === "Nora" && document.getElementById("mdp").value === "rude"){
+    if (document.getElementById("idn").value === "Nora" && document.getElementById("mdp").value === "true"){
             window.location.href = "pagecaveurNora.html";
             event.preventDefault();
         } else if (document.getElementById("idn").value === "Bastion" && document.getElementById("mdp").value === "rude"){
