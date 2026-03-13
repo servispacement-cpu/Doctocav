@@ -33,3 +33,7 @@ function fa() {
     window.location.href = "cavaigle/indexs.html";
 }
 
+function imcav(){
+    window.location.href = "caveurs/index.html";
+}
+
