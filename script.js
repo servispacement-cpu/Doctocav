@@ -18,7 +18,7 @@ function fb() {
 document.getElementById("bl").onclick = fl;
 
 function fl() {
-    window.location.href = "cavL'angeaoût/index.html";
+    window.location.href = "cavl'angeaoût/index.html";
 }
 
 
