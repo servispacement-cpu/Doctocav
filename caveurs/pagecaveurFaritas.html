@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <link rel="stylesheet" href="../style.css">
+        <title>Doctocav service Faritas</title>
+    </head>
+    <body>
+
+<div class="un">
+    <h1>Service DOCTOCAV RESERVATION: Caves Faritas</h1>
+</div>
+
+<div class="un">
+    <h1>Nouveau client CAVE 1</h1>
+    <h3>Nom du client:</h3>
+    <p id="nomclient1"></p><br>
+    <h3>Age du client:</h3>
+    <p id="ageclient1"></p>
+</div>
+
+<div class="un">
+    <h1>Nouveau client CAVE 2</h1>
+    <h3>Nom du client:</h3>
+    <p id="nomclient2"></p><br>
+    <h3>Age du client:</h3>
+    <p id="ageclient2"></p>
+</div>
+
+<div class="un">
+    <h1>Nouveau client CAVE 3</h1>
+    <h3>Nom du client:</h3>
+    <p id="nomclient3"></p><br>
+    <h3>Age du client:</h3>
+    <p id="ageclient3"></p>
+</div>
+
+<div class="un">
+    <h1>Nouveau client CAVE 4</h1>
+    <h3>Nom du client:</h3>
+    <p id="nomclient4"></p><br>
+    <h3>Age du client:</h3>
+    <p id="ageclient4"></p>
+</div>
+      <script>
+                let nom1 = localStorage.getItem("nomF1");
+                let age1 = localStorage.getItem("ageF1");
+                let cond1= JSON.parse(localStorage.getItem("conditF1"));
+                if (cond1 === true){
+                    document.getElementById("nomclient1").innerHTML = nom1;
+                    document.getElementById("ageclient1").innerHTML = age1;
+                } else {}
+/////////////////////////////////////////
+                 let nom2 = localStorage.getItem("nomF2");
+                let age2 = localStorage.getItem("ageF2");
+                let cond2= JSON.parse(localStorage.getItem("conditF2"));
+                if (cond2 === true){
+                    document.getElementById("nomclient2").innerHTML = nom2;
+                    document.getElementById("ageclient2").innerHTML = age2;
+                } else {}
+////////////////////////////////////////////
+                 let nom3 = localStorage.getItem("nomF3");
+                let age3 = localStorage.getItem("ageF3");
+                let cond3= JSON.parse(localStorage.getItem("conditF3"));
+                if (cond3 === true){
+                    document.getElementById("nomclient3").innerHTML = nom3;
+                    document.getElementById("ageclient3").innerHTML = age3;
+                } else {}
+//////////////////////////////////////////
+                 let nom4 = localStorage.getItem("nomF4");
+                let age4 = localStorage.getItem("ageF4");
+                let cond4= JSON.parse(localStorage.getItem("conditF4"));
+                if (cond4 === true){
+                    document.getElementById("nomclient4").innerHTML = nom4;
+                    document.getElementById("ageclient4").innerHTML = age4;
+                } else {}
+        </script>
+    </body>
+</html>
