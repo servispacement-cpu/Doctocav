@@ -33,8 +33,17 @@ function fa() {
     window.location.href = "cavaigle/indexs.html";
 }
 
+document.getElementById("ba").onclick = ff;
+function ff() {
+    window.location.href = "cavfaritas/indexs.html";
+}
+
+
 document.getElementById("bcaveur").onclick = imcav; 
 function imcav(){
     window.location.href = "caveurs/index.html";
 }
+
+
+
 
