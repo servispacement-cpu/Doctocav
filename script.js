@@ -33,7 +33,7 @@ function fa() {
     window.location.href = "cavaigle/indexs.html";
 }
 
-document.getElementById("ba").onclick = ff;
+document.getElementById("bf").onclick = ff;
 function ff() {
     window.location.href = "cavfaritas/indexs.html";
 }
