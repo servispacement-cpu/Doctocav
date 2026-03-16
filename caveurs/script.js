@@ -17,6 +17,9 @@ function accesPages(){
         } else if (document.getElementById("idn").value === "Aigle" && document.getElementById("mdp").value === "rude"){
             window.location.href = "pagecaveurAigle.html";
             event.preventDefault();
+        } else if (document.getElementById("idn").value === "Faritas" && document.getElementById("mdp").value === "aupoulet"){
+            window.location.href = "pagecaveurFaritas.html";
+            event.preventDefault();
         } else {
             alert ("Ces donnees ne figurent pas dans nos dossiers. Veuiller reessayer")
         }
