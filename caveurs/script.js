@@ -8,7 +8,7 @@ function accesPages(){
         } else if (document.getElementById("idn").value === "Bastion" && document.getElementById("mdp").value === "rude"){
              window.location.href = "pagecaveurBastion.html";
             event.preventDefault();
-        } else if (document.getElementById("idn").value === "Lion" && document.getElementById("mdp").value === "rude"){
+        } else if (document.getElementById("idn").value === "L'angeaoût" && document.getElementById("mdp").value === "rude"){
             window.location.href = "pagecaveurL'angeaoût.html";
             event.preventDefault()
         } else if (document.getElementById("idn").value === "Eve" && document.getElementById("mdp").value === "rude"){
