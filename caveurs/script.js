@@ -9,7 +9,7 @@ function accesPages(){
              window.location.href = "pagecaveurBastion.html";
             event.preventDefault();
         } else if (document.getElementById("idn").value === "Lion" && document.getElementById("mdp").value === "rude"){
-            window.location.href = "pagecaveurLion.html";
+            window.location.href = "pagecaveurL'angeaoût.html";
             event.preventDefault()
         } else if (document.getElementById("idn").value === "Eve" && document.getElementById("mdp").value === "rude"){
             window.location.href = "pagecaveurEve.html";
