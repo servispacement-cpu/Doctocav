@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Caves Aigle 3</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+    <div class="un">
+        <h1>Formulaire d'inscription de la cave Aigle 3</h1>
+    </div>
+
+    <div class="un">
+        <img class="imgcartes" src="map3.png">
+    </div>
+
+    <div class="un">
+        <form id="res">
+            <label>NOM ET PRENOM <br>
+            <input type="text" id="nom"> </label> <br> <br>
+            <label>AGE <br>
+            <input type="number" id="age"> </label> <br> <br>
+            <label>CONDITIONS <p>La non acceptation des conditions supprime l'insrciption (cochez pour accepter)</p>
+            <input type="checkbox" id="cond"> </label> <br><br>
+
+            <button type="submit">Valider l'insrciption</button>
+        </form>
+    </div>
+
+<script>
+    document.getElementById("res").addEventListener("submit" , fbast);
+
+    function fbast(){
+    const nom= document.getElementById("nom").value;
+    const age= Number(document.getElementById("age").value);
+    if (document.getElementById("cond").checked) {
+        var cond = true;
+    } else {
+        var cond  = false;
+    }
+
+
+    localStorage.setItem("nomA3" , nom);
+    localStorage.setItem("ageA3", age);
+    localStorage.setItem("conditA3" , JSON.stringify(cond));
+
+    }
+
+</script>
+    
+    </body>
+</html>
