@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <link rel="stylesheet" href="../style.css">
+        <title>Doctocav service Faritas</title>
+    </head>
+    <body>
+
+<div class="un">
+    <h1>Service DOCTOCAV RESERVATION: Caves Faritas</h1>
+</div>
+
+<div class="un">
+    <h1>Nouveau client CAVE 1</h1>
+    <h3>Nom du client:</h3>
+    <p id="nomclient1"></p><br>
+    <h3>Age du client:</h3>
+    <p id="ageclient1"></p>
+</div>
+
+<div class="un">
+    <h1>Nouveau client CAVE 2</h1>
+    <h3>Nom du client:</h3>
+    <p id="nomclient2"></p><br>
+    <h3>Age du client:</h3>
+    <p id="ageclient2"></p>
+</div>
+
+<div class="un">
+    <h1>Nouveau client CAVE 3</h1>
+    <h3>Nom du client:</h3>
+    <p id="nomclient3"></p><br>
+    <h3>Age du client:</h3>
+    <p id="ageclient3"></p>
+</div>
+
+<div class="un">
+    <h1>Nouveau client CAVE 4</h1>
+    <h3>Nom du client:</h3>
+    <p id="nomclient4"></p><br>
+    <h3>Age du client:</h3>
+    <p id="ageclient4"></p>
+</div>
+<script src="../tools.js"></script>
+
+      <script>
+                requeteget("69cab32423186b27e2a91b36").then(data => {
+    console.log(data);
+    document.getElementById("nomclient1").innerHTML = data.nom; 
+    document.getElementById("ageclient1").innerHTML = data.age;
+  })
+  .catch(err => {
+    console.error(err); 
+  });
+/////////////////////////////////////////
+                 requeteget("69cab37b23186b27e2a91b38").then(data => {
+    console.log(data);
+    document.getElementById("nomclient2").innerHTML = data.nom; 
+    document.getElementById("ageclient2").innerHTML = data.age;
+  })
+  .catch(err => {
+    console.error(err); 
+  });
+////////////////////////////////////////////
+                 requeteget("69cab38823186b27e2a91b3a").then(data => {
+    console.log(data);
+    document.getElementById("nomclient3").innerHTML = data.nom; 
+    document.getElementById("ageclient3").innerHTML = data.age;
+  })
+  .catch(err => {
+    console.error(err); 
+  });
+//////////////////////////////////////////
+                 requeteget("69cab39923186b27e2a91b3c").then(data => {
+    console.log(data);
+    document.getElementById("nomclient4").innerHTML = data.nom; 
+    document.getElementById("ageclient4").innerHTML = data.age;
+  })
+  .catch(err => {
+    console.error(err); 
+  });
+        </script>
+    </body>
+</html>
