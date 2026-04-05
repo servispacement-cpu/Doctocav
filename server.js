@@ -74,7 +74,7 @@ app.post('/restaurant', async (req, res) => {
 });
 
 
-app.use(express.static("/"));
+app.use(express.static("public"));
 
 // Start the server
 
