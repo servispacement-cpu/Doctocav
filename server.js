@@ -74,6 +74,9 @@ app.post('/restaurant', async (req, res) => {
 });
 
  
+app.get("/", (req, res) => {
+  res.send("Bienvenue sur DoctoCav");
+});
 
 // Start the server
 
