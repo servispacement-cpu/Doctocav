@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <link rel="stylesheet" href="../style.css">
+        <title>Doctocav service Bastion</title>
+    </head>
+    <body>
+
+<div class="un">
+    <h1>Service DOCTOCAV RESERVATION: Cave Baston</h1>
+</div>
+
+<div class="un">
+    <h1>Nouveau client</h1>
+    <h3>Nom du client:</h3>
+    <p id="nomclient"></p><br>
+    <h3>Age du client:</h3>
+    <p id="ageclient"></p>
+</div>
+
+<script src="../tools.js"></script>
+
+        <script>
+               requeteget("69cab13023186b27e2a91b12").then(data => {
+    console.log(data);
+    document.getElementById("nomclient").innerHTML = data.nom; 
+    document.getElementById("ageclient").innerHTML = data.age;
+  })
+  .catch(err => {
+    console.error(err); 
+  });
+            
+        </script>
+    </body>
+</html>
