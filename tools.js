@@ -1,7 +1,7 @@
 
 
 async function requete(id, nom, age){
-    const url = 'http://localhost:3000/items';
+    const url = 'https://doctocav.onrender.com/items';
     const payload = { id, nom, age };
 
     try {
@@ -22,7 +22,7 @@ async function requete(id, nom, age){
 
 
 async function requeteget(id){
-    const url = 'http://localhost:3000/item?id='+id;
+    const url = 'https://doctocav.onrender.com/item?id='+id;
     try {
         const response = await fetch(url, {
             method: 'GET',
