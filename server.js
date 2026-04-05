@@ -73,10 +73,8 @@ app.post('/restaurant', async (req, res) => {
   res.json(item);
 });
 
- 
-app.get("/", (req, res) => {
-  res.send("Bienvenue sur DoctoCav");
-});
+
+app.use(express.static("public"));
 
 // Start the server
 
