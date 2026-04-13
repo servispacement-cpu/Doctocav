@@ -42,3 +42,31 @@ document.getElementById("bcaveur").onclick = imcav;
 function imcav(){
     window.location.href = "caveurs/index.html";
 }
+
+
+var lograna = document.getElementById("lograna");
+var flygana = document.getElementById("flygana");
+
+
+async function run(){
+    for (;;){
+    await pub("Lograna: Les cookies de Référence", lograna);
+    await pub("Le combo ultime crousti-moelleux-fondant", lograna)
+    }
+}
+async function run1(){
+    for (;;){
+    await pub("Voyagez €co avec Flygana", flygana);
+    await pub("Voyage en deuxième classe Paris-Pékin à partir de 999,99 €", flygana);
+    await pub("Flygana : volez libre ! ", flygana);
+    }
+}
+
+
+async function pub(txt, marque){
+    marque.innerHTML = txt;
+    await new Promise(fct => setTimeout(fct, 2000));
+}
+
+run1();
+run();
