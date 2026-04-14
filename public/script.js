@@ -51,7 +51,8 @@ var flygana = document.getElementById("flygana");
 async function run(){
     for (;;){
     await pub("Lograna: Les cookies de Référence", lograna);
-    await pub("Le combo ultime crousti-moelleux-fondant", lograna)
+    await pub("Ils ont même conquis les gentlemens", lograna);
+    await pub("Le combo ultime crousti-moelleux-fondant", lograna);
     }
 }
 async function run1(){
@@ -65,7 +66,7 @@ async function run1(){
 
 async function pub(txt, marque){
     marque.innerHTML = txt;
-    await new Promise(fct => setTimeout(fct, 2000));
+    await new Promise(fct => setTimeout(fct, 5000));
 }
 
 run1();
