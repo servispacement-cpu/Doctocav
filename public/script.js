@@ -74,6 +74,6 @@ run();
 
 
 
-function flygana(){
-    window.location.href = "https://flygana.onrender.com"
-}
+document.getElementById("flyganaL").addEventListener("click" , function(){
+    window.location.href = "https://flygana.onrender.com";
+});
