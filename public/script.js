@@ -51,7 +51,7 @@ var flygana = document.getElementById("flygana");
 async function run(){
     for (;;){
     await pub("Lograna: Les cookies de Référence", lograna);
-    await pub("Ils ont même conquis les gentlemen", lograna);
+    await pub("Ils ont même conquit les gentlemen", lograna);
     await pub("Le combo ultime crousti-moelleux-fondant", lograna);
     }
 }
@@ -71,3 +71,9 @@ async function pub(txt, marque){
 
 run1();
 run();
+
+
+
+function flygana(){
+    window.location.href = "https://flygana.onrender.com"
+}
