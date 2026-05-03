@@ -58,7 +58,7 @@ async function run(){
 async function run1(){
     for (;;){
     await pub("Voyagez €co avec Flygana", flygana);
-    await pub("Voyage en deuxième classe Paris-Pékin à partir de 999,99 €", flygana);
+    await pub("Voyage en deuxième classe Paris-Pékin à partir de 1806 €", flygana);
     await pub("Flygana : volez libre ! ", flygana);
     }
 }
