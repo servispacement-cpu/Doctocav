@@ -59,11 +59,12 @@ app.get('/item', async (req, res) => {
 });
 
 app.post('/items', async (req, res) => {
-  const item = await  new Item({
+  const item =  new Item({
    "cav" : req.body.cav,
    "nom" : req.body.nom,
    "age" : req.body.age,
 });
+  console.log(item);
   await item.save();
   res.json(item);
 });
