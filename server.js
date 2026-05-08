@@ -28,6 +28,7 @@ mongoose.connect('mongodb://servispacement_db_user:test@ac-wrbrxfi-shard-00-00.r
 
 const itemSchema = new mongoose.Schema({
   //restaurant: String,
+  cav: String,
   nom: String,
   age: Number,
 });
