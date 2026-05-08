@@ -64,7 +64,7 @@ app.post('/items', async (req, res) => {
    "nom" : req.body.nom,
    "age" : req.body.age,
 });
-  console.log(item);
+  console.log(req.body);
   await item.save();
   res.json(item);
 });
