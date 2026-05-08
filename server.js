@@ -54,16 +54,16 @@ app.get('/item', async (req, res) => {
   if (!req.query || !req.query.id) {
     return res.status(400).json({ error: 'ID manquant' });
   }
-  const item = await Item.find("cav" = req.query.id);
+  const item = await Item.find({"cav" = req.query.id});
   res.json(item);
 });
 
 app.post('/items', async (req, res) => {
-  const item = await  new Item(
+  const item = await  new Item({
    "cav" = req.body.cav,
    "nom" = req.body.nom,
    "age" = req.body.age,
-  );
+});
   await item.save();
   res.json(item);
 });
