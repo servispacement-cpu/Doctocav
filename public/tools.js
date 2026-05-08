@@ -1,8 +1,8 @@
 
 
-async function requete(id, nom, age){
+async function requete(cav, nom, age){
     const url = 'https://doctocav.onrender.com/items';
-    const payload = { id, nom, age };
+    const payload = { cav, nom, age };
 
     try {
         const response = await fetch(url, {
@@ -21,8 +21,8 @@ async function requete(id, nom, age){
 }
 
 
-async function requeteget(id){
-    const url = 'https://doctocav.onrender.com/item?id='+id;
+async function requeteget(cav){
+    const url = 'https://doctocav.onrender.com/item?id='+cav;
     try {
         const response = await fetch(url, {
             method: 'GET',

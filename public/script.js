@@ -43,6 +43,10 @@ function imcav(){
     window.location.href = "caveurs/index.html";
 }
 
+function ju(){
+    window.location.href = "cavju/index.html"
+}
+
 
 var lograna = document.getElementById("lograna");
 var flygana = document.getElementById("flygana");
