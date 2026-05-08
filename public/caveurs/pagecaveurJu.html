@@ -10,21 +10,25 @@
     <h1>Service DOCTOCAV RESERVATION: Cave Ju</h1>
 </div>
 
-<div class="un">
-    <h1>Nouveau client</h1>
-    <h3>Nom du client:</h3>
-    <p id="nomclient"></p><br>
-    <h3>Age du client:</h3>
-    <p id="ageclient"></p>
+<div class="un" id="dad">
+    <h1>Clients:</h1>
 </div>
 
 <script src="../tools.js"></script>
 
         <script>
                 requeteget("Ju").then(data => {
-    console.log(data);
-    document.getElementById("nomclient").innerHTML = data.nom; 
-    document.getElementById("ageclient").innerHTML = data.age;
+    for (i=0; i<data.length; i++) {
+    const nom = document.createElement("h3"); 
+    const age = document.createElement("h3");
+    const hr = document.createElement("hr");
+    nom.textContent = "Nom du client : " + data[i].nom;
+    age.textContent = "Age du client : " + data[i].age;
+    const dad = document.getElementById("dad");
+    dad.appendChild(nom);
+    dad.appendChild(age);
+    dad.appendChild(hr);
+    }
   })
   .catch(err => {
     console.error(err); 

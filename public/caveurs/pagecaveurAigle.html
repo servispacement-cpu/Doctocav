@@ -10,70 +10,86 @@
     <h1>Service DOCTOCAV RESERVATION: Caves Aigle</h1>
 </div>
 
-<div class="un">
-    <h1>Nouveau client CAVE 1</h1>
-    <h3>Nom du client:</h3>
-    <p id="nomclient1"></p><br>
-    <h3>Age du client:</h3>
-    <p id="ageclient1"></p>
+<div class="un" id="dad1">
+<h1>Clients pour la cave 1:</h1>
 </div>
 
-<div class="un">
-    <h1>Nouveau client CAVE 2</h1>
-    <h3>Nom du client:</h3>
-    <p id="nomclient2"></p><br>
-    <h3>Age du client:</h3>
-    <p id="ageclient2"></p>
+<div class="un" id="dad2">
+<h1>Clients pour la cave 2:</h1>
 </div>
 
-<div class="un">
-    <h1>Nouveau client CAVE 3</h1>
-    <h3>Nom du client:</h3>
-    <p id="nomclient3"></p><br>
-    <h3>Age du client:</h3>
-    <p id="ageclient3"></p>
+<div class="un" id="dad3">
+  <h1>Clients pour la cave 3:</h1>
 </div>
 
-<div class="un">
-    <h1>Nouveau client CAVE 4</h1>
-    <h3>Nom du client:</h3>
-    <p id="nomclient4"></p><br>
-    <h3>Age du client:</h3>
-    <p id="ageclient4"></p>
+<div class="un" id="dad4">
+  <h1>Clients pour la cave 4:</h1>
 </div>
 <script src="../tools.js"></script>
       <script>
                 requeteget("69cab1b623186b27e2a91b19").then(data => {
-    console.log(data);
-    document.getElementById("nomclient1").innerHTML = data.nom; 
-    document.getElementById("ageclient1").innerHTML = data.age;
+    for (i=0; i<data.length; i++) {
+    const nom = document.createElement("h3"); 
+    const age = document.createElement("h3");
+    const hr = document.createElement("hr");
+    nom.textContent = "Nom du client : " + data[i].nom;
+    age.textContent = "Age du client : " + data[i].age;
+    const dad = document.getElementById("dad1");
+    dad.appendChild(nom);
+    dad.appendChild(age);
+    dad.appendChild(hr);
+    }
   })
   .catch(err => {
     console.error(err); 
   });
 /////////////////////////////////////////
                  requeteget("69cab21423186b27e2a91b25").then(data => {
-    console.log(data);
-    document.getElementById("nomclient2").innerHTML = data.nom; 
-    document.getElementById("ageclient2").innerHTML = data.age;
+    for (i=0; i<data.length; i++) {
+    const nom = document.createElement("h3"); 
+    const age = document.createElement("h3");
+    const hr = document.createElement("hr");
+    nom.textContent = "Nom du client : " + data[i].nom;
+    age.textContent = "Age du client : " + data[i].age;
+    const dad = document.getElementById("dad2");
+    dad.appendChild(nom);
+    dad.appendChild(age);
+    dad.appendChild(hr);
+    }
   })
   .catch(err => {
     console.error(err); 
   });
 ////////////////////////////////////////////
                  requeteget("69cab26623186b27e2a91b27").then(data => {
-    console.log(data);
-    document.getElementById("nomclient3").innerHTML = data.nom; 
-    document.getElementById("ageclient3").innerHTML = data.age;
+    for (i=0; i<data.length; i++) {
+    const nom = document.createElement("h3"); 
+    const age = document.createElement("h3");
+    const hr = document.createElement("hr");
+    nom.textContent = "Nom du client : " + data[i].nom;
+    age.textContent = "Age du client : " + data[i].age;
+    const dad = document.getElementById("dad3");
+    dad.appendChild(nom);
+    dad.appendChild(age);
+    dad.appendChild(hr);
+    }
   })
   .catch(err => {
     console.error(err); 
   });
 //////////////////////////////////////////
                 requeteget("69cab27723186b27e2a91b29").then(data => {
-    console.log(data);
-    document.getElementById("nomclient4").innerHTML = data.nom; 
-    document.getElementById("ageclient4").innerHTML = data.age;
+    for (i=0; i<data.length; i++) {
+    const nom = document.createElement("h3"); 
+    const age = document.createElement("h3");
+    const hr = document.createElement("hr");
+    nom.textContent = "Nom du client : " + data[i].nom;
+    age.textContent = "Age du client : " + data[i].age;
+    const dad = document.getElementById("dad4");
+    dad.appendChild(nom);
+    dad.appendChild(age);
+    dad.appendChild(hr);
+    }
   })
   .catch(err => {
     console.error(err); 
