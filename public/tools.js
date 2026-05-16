@@ -14,6 +14,7 @@ async function requete(cav, nom, age){
         if (!response.ok) throw new Error(`Erreur HTTP : ${response.status}`);
 
         const data = await response.json();
+        if(data){alert("Votre réservation a été enregistrée.")}
         console.log('Réponse du serveur :', data);
     } catch (error) {
         console.error('Erreur :', error);

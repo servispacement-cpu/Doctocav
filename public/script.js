@@ -81,3 +81,7 @@ run();
 document.getElementById("flyganaL").addEventListener("click" , function(){
     window.location.href = "https://flygana.onrender.com";
 });
+
+document.getElementById("logranaL").addEventListener("click" , function(){
+    window.location.href = "https://lograna.onrender.com";
+});
